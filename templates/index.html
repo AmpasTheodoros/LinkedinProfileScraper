@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Profile Data</title>
+</head>
+<body>
+    <h1>LinkedIn Profile Data</h1>
+    {% if data %}
+        <h2>Name: {{ data.name }}</h2>
+        <p>Headline: {{ data.headline }}</p>
+        <!-- Display other scraped data here -->
+    {% else %}
+        <p>Error: Unable to access the profile or profile data not found.</p>
+    {% endif %}
+</body>
+</html>
